@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Pricing | Edspert.id</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="w-full h-[80px] flex lg:justify-center items-center bg-white absolute top-0 left-0">
+        <!-- navigation bar -->
+        <div class="nav-container flex justify-between items-center w-full xl:w-[1280px] h-[44px] px-[32px] relative">
+                <!-- navigation logo and content -->
+                <div class="nav-content flex justify-between lg:justify-center items-center gap-[40px]">
+                    <img src="images/logo.png" alt="Edspert-logo"  width="142px" height="32px">
+                </div>
+
+                <!-- hamburger button -->
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 xl:hidden">
+                        <span class="w-[30px] h-[2px] my-2 block bg-gray-900 origin-top-left transition duration-300 ease-in-out"></span>
+                        <span class="w-[30px] h-[2px] my-2 block bg-gray-900 transition duration-300 ease-in-out"></span>
+                        <span class="w-[30px] h-[2px] my-2 block bg-gray-900 origin-bottom-left transition duration-300 ease-in-out"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg xl:shadow-none rounded-lg xl:rounded-none max-w-[300px] w-full right-4 top-full xl:block xl:static xl:bg-transparent xl:max-w-full">
+                        <ul class="block xl:flex xl:justify-center xl:items-center">
+                            <li class="group"><a href="home.html" class="py-2 flex mx-8 font-semibold">Home</a></li>
+                            <li class="group"><a href="products.html" class="py-2 flex mx-8 xl:justify-center items-center gap-[8px] font-semibold">Products <img src="images/Icon Down.svg"></a></li>
+                            <li class="group"><a href="resources.html" class="flex py-2 mx-8 xl:justify-center items-center gap-[8px] font-semibold">Resources <img src="images/Icon Down.svg"></a></li>
+                            <li class="group"><a href="pricing.html" class="py-2 flex mx-8 font-semibold">Pricing</a></li>
+
+                            <!-- navigation action button -->
+                            <div class="py-2 flex mx-8 nav-btn-cta gap-[8px]">
+                                <button type="button" class="btn-login text-base w-[83px] h-[44px] rounded-lg font-semibold py-[10px] px-[18px]">Log in</button>
+                                <button type="button" class="btn-cta text-base w-[100px] rounded-lg font-semibold py-[10px] px-[18px]">Sign up</button>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+        </div>
+    </header>
+    
+    <!-- section -->
+    <section class="flex flex-col justify-between items-center w-full xl:h-[438px] pt-[96px]">
+        <div class="section-container flex flex-col justify-between items-center w-full xl:w-[1280px] px-[32px]">
+            <div class="section-content flex flex-col justify-between items-center gap-[32px] xl:gap-[40px]">
+                <!-- heading and supporting text -->
+                <div class="heading-sup-text flex flex-col justify-center items-center text-center gap-[18px]">
+                    <div class="heading-text flex flex-col justify-center items-center gap-[16px] w-[1024px] text-center">
+                        <p class="badge w-[157px] py-[4px] px-[12px] text-[12px] md:text-[14px] leading-[20px] font-medium rounded-2xl">Intensive Bootcamp</p>
+                        <p class="section-heading text-[38px] lg:text-[48px] leading-[40px] md:leading-[60px] font-semibold">Upskill Your Talent!</p>
+                    </div>
+                    <p class="sup-text text-[18px] md:text-[20px] leading-[25px] md:leading-[30px]">Kembangkan potensimu bersama Edspert</p>
+                </div>
+
+                <!-- search bar -->
+                <div class="relative w-[320px]">
+                    <span class="absolute inset-y-0 start-0 grid w-10 place-content-center">
+                        <button type="button" class="text-gray-600 hover:text-gray-700">
+                          <span class="sr-only">Search</span>
+                      
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.67"
+                            stroke="#667085"
+                            class="h-[15px] w-[15px]"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                            />
+                          </svg>
+                        </button>
+                      </span>
+
+                    <label for="Search" class="sr-only"> Search </label>
+                
+                    <input
+                      type="text"
+                      id="Search"
+                      placeholder="Search"
+                      class="w-full rounded-md border-gray-200 py-2.5 pl-8 shadow-sm sm:text-sm"
+                    />
+                
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- background-pattern -->
+        <div class="background-pattern w-full h-[32px] md:h-[64px] xl:h-[96px]">
+            <!-- <img src="images/Background.svg" class="relative z-[-1] bg-pattern">
+            <img src="images/Left band 1.svg" class="relative z-[-1] patternL-1">
+            <img src="images/Left band 2.svg" class="relative z-[-1] patternL-2">
+            <img src="images/Right band 1.svg" class="relative z-[-1] patternR-1">
+            <img src="images/Right band 2.svg" class="relative z-[-1] patternR-2">
+            <img src="images/Right band 3.svg" class="relative z-[-1] patternR-3"> -->
+        </div>
+    </section>
+
+    <!-- main cards content -->
+    <main>
+        <!-- card section -->
+        <div class="cards flex flex-wrap justify-center items-center md:px-[64px] xl:px-[112px] gap-[20px] md:gap-[32px]">
+            <!-- card 1 -->
+            <div class="card-item flex flex-col justify-center items-center w-[384px] rounded-2xl">
+                <img src="images/card-item.png" alt="category" width="384px" height="187px" class="rounded-t-2xl">
+            
+                <!-- card header -->
+                <div class="item-heading w-full py-[16px] px-[32px] gap-[16px]">
+                    <h3 class="item-header font-semibold text-[20px] leading-[30px]">Web Development Bootcamp</h3>
+                    <p class="item-sup-text text-[16px] leading-[24px]">Batch 12</p>
+                </div>
+            
+                <!-- card content -->
+                <div class="card-content flex flex-col w-full py-[24px] px-[32px] gap-24px">
+                    <div class="check-items flex flex-col gap-[16px]">
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Certified Mentor</p>
+                        </div>
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Integrated Module</p>
+                        </div>
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Online Class</p>
+                        </div>
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Active Community</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- card price -->
+                <div class="card-price flex justify-between items-center w-full py-[8px] px-[32px]">
+                    <p class="item-sup-text line-through text-[16px] leading-[24px]">Rp. 1.499.000</p>
+                    <p class="item-header font-bold text-[20px] leading-[30px]">Rp 899.000</p>
+                </div>
+            
+                <!-- card footer -->
+                <div class="card-footer flex justify-center items-center pt-0 pb-[32px] px-[32px] gap-[24px]">
+                    <button type="button" class="btn-cta w-[320px] rounded-lg py-[12px] px-[20px] font-semibold text-[16px] leading-[24px]">Daftar Sekarang</button>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="card-item flex flex-col justify-center items-center w-[384px] rounded-2xl">
+                <img src="images/card-item.png" alt="category" width="384px" height="187px" class="rounded-t-2xl">
+            
+                <!-- card header -->
+                <div class="item-heading w-full py-[16px] px-[32px] gap-[16px]">
+                    <h3 class="item-header font-semibold text-[20px] leading-[30px]">Web Development Bootcamp</h3>
+                    <p class="item-sup-text text-[16px] leading-[24px]">Batch 12</p>
+                </div>
+            
+                <!-- card content -->
+                <div class="card-content flex flex-col w-full py-[24px] px-[32px] gap-24px">
+                    <div class="check-items flex flex-col gap-[16px]">
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Certified Mentor</p>
+                        </div>
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Integrated Module</p>
+                        </div>
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Online Class</p>
+                        </div>
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Active Community</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- card price -->
+                <div class="card-price flex justify-between items-center w-full py-[8px] px-[32px]">
+                    <p class="item-sup-text line-through text-[16px] leading-[24px]">Rp. 1.499.000</p>
+                    <p class="item-header font-bold text-[20px] leading-[30px]">Rp 899.000</p>
+                </div>
+            
+                <!-- card footer -->
+                <div class="card-footer flex justify-center items-center pt-0 pb-[32px] px-[32px] gap-[24px]">
+                    <button type="button" class="btn-cta w-[320px] rounded-lg py-[12px] px-[20px] font-semibold text-[16px] leading-[24px]">Daftar Sekarang</button>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="card-item flex flex-col justify-center items-center w-[384px] rounded-2xl">
+                <img src="images/card-item.png" alt="category" width="384px" height="187px" class="rounded-t-2xl">
+            
+                <!-- card header -->
+                <div class="item-heading w-full py-[16px] px-[32px] gap-[16px]">
+                    <h3 class="item-header font-semibold text-[20px] leading-[30px]">Web Development Bootcamp</h3>
+                    <p class="item-sup-text text-[16px] leading-[24px]">Batch 12</p>
+                </div>
+            
+                <!-- card content -->
+                <div class="card-content flex flex-col w-full py-[24px] px-[32px] gap-24px">
+                    <div class="check-items flex flex-col gap-[16px]">
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Certified Mentor</p>
+                        </div>
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Integrated Module</p>
+                        </div>
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Online Class</p>
+                        </div>
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Active Community</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- card price -->
+                <div class="card-price flex justify-between items-center w-full py-[8px] px-[32px]">
+                    <p class="item-sup-text line-through text-[16px] leading-[24px]">Rp. 1.499.000</p>
+                    <p class="item-header font-bold text-[20px] leading-[30px]">Rp 899.000</p>
+                </div>
+            
+                <!-- card footer -->
+                <div class="card-footer flex justify-center items-center pt-0 pb-[32px] px-[32px] gap-[24px]">
+                    <button type="button" class="btn-cta w-[320px] rounded-lg py-[12px] px-[20px] font-semibold text-[16px] leading-[24px]">Daftar Sekarang</button>
+                </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="card-item flex flex-col justify-center items-center w-[384px] rounded-2xl">
+                <img src="images/card-item.png" alt="category" width="384px" height="187px" class="rounded-t-2xl">
+            
+                <!-- card header -->
+                <div class="item-heading w-full py-[16px] px-[32px] gap-[16px]">
+                    <h3 class="item-header font-semibold text-[20px] leading-[30px]">Web Development Bootcamp</h3>
+                    <p class="item-sup-text text-[16px] leading-[24px]">Batch 12</p>
+                </div>
+            
+                <!-- card content -->
+                <div class="card-content flex flex-col w-full py-[24px] px-[32px] gap-24px">
+                    <div class="check-items flex flex-col gap-[16px]">
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Certified Mentor</p>
+                        </div>
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Integrated Module</p>
+                        </div>
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Online Class</p>
+                        </div>
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Active Community</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- card price -->
+                <div class="card-price flex justify-between items-center w-full py-[8px] px-[32px]">
+                    <p class="item-sup-text line-through text-[16px] leading-[24px]">Rp. 1.499.000</p>
+                    <p class="item-header font-bold text-[20px] leading-[30px]">Rp 899.000</p>
+                </div>
+            
+                <!-- card footer -->
+                <div class="card-footer flex justify-center items-center pt-0 pb-[32px] px-[32px] gap-[24px]">
+                    <button type="button" class="btn-cta w-[320px] rounded-lg py-[12px] px-[20px] font-semibold text-[16px] leading-[24px]">Daftar Sekarang</button>
+                </div>
+            </div>
+
+            <!-- card 5 -->
+            <div class="card-item flex flex-col justify-center items-center w-[384px] rounded-2xl">
+                <img src="images/card-item.png" alt="category" width="384px" height="187px" class="rounded-t-2xl">
+            
+                <!-- card header -->
+                <div class="item-heading w-full py-[16px] px-[32px] gap-[16px]">
+                    <h3 class="item-header font-semibold text-[20px] leading-[30px]">Web Development Bootcamp</h3>
+                    <p class="item-sup-text text-[16px] leading-[24px]">Batch 12</p>
+                </div>
+            
+                <!-- card content -->
+                <div class="card-content flex flex-col w-full py-[24px] px-[32px] gap-24px">
+                    <div class="check-items flex flex-col gap-[16px]">
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Certified Mentor</p>
+                        </div>
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Integrated Module</p>
+                        </div>
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Online Class</p>
+                        </div>
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Active Community</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- card price -->
+                <div class="card-price flex justify-between items-center w-full py-[8px] px-[32px]">
+                    <p class="item-sup-text line-through text-[16px] leading-[24px]">Rp. 1.499.000</p>
+                    <p class="item-header font-bold text-[20px] leading-[30px]">Rp 899.000</p>
+                </div>
+            
+                <!-- card footer -->
+                <div class="card-footer flex justify-center items-center pt-0 pb-[32px] px-[32px] gap-[24px]">
+                    <button type="button" class="btn-cta w-[320px] rounded-lg py-[12px] px-[20px] font-semibold text-[16px] leading-[24px]">Daftar Sekarang</button>
+                </div>
+            </div>
+
+            <!-- card 6 -->
+            <div class="card-item flex flex-col justify-center items-center w-[384px] rounded-2xl">
+                <img src="images/card-item.png" alt="category" width="384px" height="187px" class="rounded-t-2xl">
+            
+                <!-- card header -->
+                <div class="item-heading w-full py-[16px] px-[32px] gap-[16px]">
+                    <h3 class="item-header font-semibold text-[20px] leading-[30px]">Web Development Bootcamp</h3>
+                    <p class="item-sup-text text-[16px] leading-[24px]">Batch 12</p>
+                </div>
+            
+                <!-- card content -->
+                <div class="card-content flex flex-col w-full py-[24px] px-[32px] gap-24px">
+                    <div class="check-items flex flex-col gap-[16px]">
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Certified Mentor</p>
+                        </div>
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Integrated Module</p>
+                        </div>
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Online Class</p>
+                        </div>
+                        <div class="check-item-text flex items-center justify-left gap-[12px]">
+                            <img src="images/Check icon.svg">
+                            <p class="text-[16px] leading-[24px]">Active Community</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- card price -->
+                <div class="card-price flex justify-between items-center w-full py-[8px] px-[32px]">
+                    <p class="item-sup-text line-through text-[16px] leading-[24px]">Rp. 1.499.000</p>
+                    <p class="item-header font-bold text-[20px] leading-[30px]">Rp 899.000</p>
+                </div>
+            
+                <!-- card footer -->
+                <div class="card-footer flex justify-center items-center pt-0 pb-[32px] px-[32px] gap-[24px]">
+                    <button type="button" class="btn-cta w-[320px] rounded-lg py-[12px] px-[20px] font-semibold text-[16px] leading-[24px]">Daftar Sekarang</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- card pagination -->
+        <div class="pagination flex justify-center items-center gap-[10px] py-[40px]">
+            <ol class="flex justify-center font-medium text-[14px] pt-[12px] pb-[16px] px-[24px]">
+                <li>
+                  <a href="#" class="inline-flex items-center justify-center gap-[8px] rounded-l-lg border border-gray-100 bg-white active:bg-[#F9FAFB] text-gray-900 rtl:rotate-180 py-[10px] px-[16px]">
+                    <span class="sr-only">Prev Page</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.8333 6.99996H1.16666M1.16666 6.99996L6.99999 12.8333M1.16666 6.99996L6.99999 1.16663" stroke="#344054" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div>Previous</div>
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" class="block border border-gray-100 w-[40px] bg-white active:bg-[#F9FAFB] text-center leading-8 text-gray-900 py-[4.5px] px-[8px]">
+                    1
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="block border border-gray-100 w-[40px] bg-white active:bg-[#F9FAFB] text-center leading-8 text-gray-900 py-[4.5px] px-[8px]">
+                    2
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="hidden md:block border border-gray-100 w-[40px] bg-white active:bg-[#F9FAFB] text-center leading-8 text-gray-900 py-[4.5px] px-[8px]">
+                    3
+                  </a>
+                </li>
+
+                <li>
+                  <a class="block border border-gray-100 w-[40px] bg-white text-center leading-8 text-gray-900 py-[4.5px] px-[8px]">
+                    ...
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="hidden md:block border border-gray-100 w-[40px] bg-white active:bg-[#F9FAFB] text-center leading-8 text-gray-900 py-[4.5px] px-[8px]">
+                    8
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="block border border-gray-100 w-[40px] bg-white active:bg-[#F9FAFB] text-center leading-8 text-gray-900 py-[4.5px] px-[8px]">
+                    9
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="block border border-gray-100 w-[40px] bg-white active:bg-[#F9FAFB] text-center leading-8 text-gray-900 py-[4.5px] px-[8px]">
+                    10
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" class="inline-flex items-center justify-center gap-[8px] rounded-r-lg border border-gray-100 bg-white active:bg-[#F9FAFB] text-gray-900 rtl:rotate-180 py-[10px] px-[16px]">
+                    <span class="sr-only">Next Page</span>
+                    <div>Next</div>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.16667 6.99996H12.8333M12.8333 6.99996L7 1.16663M12.8333 6.99996L7 12.8333" stroke="#344054" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                  </a>
+                </li>
+              </ol>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="flex flex-col justify-center items-center w-full pt-[32px] md:pt-[48px] xl:pt-[64px] pb-[48px] md:gap-[64px]">
+        <div class="footer-container flex flex-col justify-center items-center w-full xl:w-[1280px] px-[32px] gap-[48px]">
+            <!-- footer links -->
+            <div class="footer-content flex flex-wrap justify-center xl:justify-left gap-[36px]">
+
+                <!-- footer product -->
+                <div class="footer-product flex flex-col gap-[10px] xl:gap-[16px] w-[140.8px] text-center md:text-left">
+                    <p class="footer-header font-semibold text-[12px] md:text-[14px] leading-[20px] text-[#98A2B3]">Product</p>
+                    <div class="footer-link flex flex-col gap-[12px]">
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Overview</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Features</a>
+                        <div class="flex items-center gap-[8px] justify-center md:justify-start">
+                            <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Solutions</a>
+                            <div class="footer-badge py-[2px] px-[8px] rounded-2xl text-[12px] font-medium leading-[18px] text-center text-[#027A48]">New</div>
+                        </div>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Tutorials</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Pricing</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Release</a>
+                    </div>
+                </div>
+
+                <!-- footer company -->
+                <div class="footer-product flex flex-col gap-[10px] xl:gap-[16px] w-[140.8px] text-center md:text-left">
+                    <p class="footer-header font-semibold text-[12px] md:text-[14px] leading-[20px] text-[#98A2B3]">Company</p>
+                    <div class="footer-link flex flex-col gap-[12px]">
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">About Us</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Careers</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Press</a> 
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">News</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Media Kit</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Contact</a>
+                    </div>
+                </div>
+
+                <!-- footer resources -->
+                <div class="footer-product flex flex-col gap-[10px] xl:gap-[16px] w-[140.8px] text-center md:text-left">
+                    <p class="footer-header font-semibold text-[12px] md:text-[14px] leading-[20px] text-[#98A2B3]">Resources</p>
+                    <div class="footer-link flex flex-col gap-[12px]">
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Blog</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Newsletter</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Events</a> 
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Help centre</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Tutorials</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Support</a>
+                    </div>
+                </div>
+
+                <!-- footer use cases -->
+                <div class="footer-product flex flex-col gap-[10px] xl:gap-[16px] w-[140.8px] text-center md:text-left">
+                    <p class="footer-header font-semibold text-[12px] md:text-[14px] leading-[20px] text-[#98A2B3]">Use cases</p>
+                    <div class="footer-link flex flex-col gap-[12px]">
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Startups</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Enterprise</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Government</a> 
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">SaaS</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Marketplaces</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Ecommerce</a>
+                    </div>
+                </div>
+
+                <!-- footer social -->
+                <div class="footer-product flex flex-col gap-[10px] xl:gap-[16px] w-[140.8px] text-center md:text-left">
+                    <p class="footer-header font-semibold text-[12px] md:text-[14px] leading-[20px] text-[#98A2B3]">Social</p>
+                    <div class="footer-link flex flex-col gap-[12px]">
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Twitter</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">LinkedIn</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Facebook</a> 
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">GitHub</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">AngelList</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Dribble</a>
+                    </div>
+                </div>
+
+                <!-- footer legal -->
+                <div class="footer-product flex flex-col gap-[10px] xl:gap-[16px] w-[140.8px] text-center md:text-left">
+                    <p class="footer-header font-semibold text-[12px] md:text-[14px] leading-[20px] text-[#98A2B3]">Legal</p>
+                    <div class="footer-link flex flex-col gap-[12px]">
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Terms</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Privacy</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Cookies</a> 
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Licenses</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Settings</a>
+                        <a href="#" class="font-semibold text-[14px] md:text-[16px] leading-[24px] text-[#667085]">Contact</a>
+                    </div>
+                
+            </div>
+        </div>
+
+            <!-- footer copyright -->
+            <div class="footer-copyright flex flex-col w-full xl:w-[1280px] px-[32px] gap-[32px]">
+                <!-- horizontal line -->
+                <div class="w-full flex justify-center items-center ">
+                    <hr class=" w-full xl:w-[1280px] border-[#EAECF0]">
+                </div>
+
+                <!-- copyright -->
+                <div class="footer-copyright-content flex flex-col lg:flex-row gap-[20px] justify-center lg:justify-between items-center w-full">
+                    <img src="images/logo.png" alt="Edspert-logo">
+                    <p class="text-[12px] lg:text-[14px] leading-[24px] text-[#98A2B3]">&copy; 2077 Untitled UI. All rights reserved.</p>
+                </div>
+            </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
